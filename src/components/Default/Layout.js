@@ -23,7 +23,7 @@ const Layout = ({ page, children }) => {
       <footer>
         © {new Date().getFullYear()}, Built by
         {` `}
-        <a href="https://www.gatsbyjs.org">Frontier Web Development</a>
+        <a href="https://www.michaelcapecci.com">Frontier Web Development</a>
       </footer>
     </>
   )

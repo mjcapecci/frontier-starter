@@ -1,0 +1,9 @@
+.hero {
+  color: white;
+  height: 100vh;
+  @include f-center;
+
+  .hero-container {
+    @include f-center;
+  }
+}
