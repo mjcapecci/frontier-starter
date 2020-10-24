@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Default/Layout"
 import Hero from "../components/Hero/HeroMain"
-import { UnderHero, Cards } from "../components/IndexSections/index"
+import { UnderHero, Cards, About } from "../components/IndexSections/index"
 
 const IndexPage = () => {
   return (
@@ -9,6 +9,7 @@ const IndexPage = () => {
       <Hero />
       <UnderHero />
       <Cards />
+      <About />
     </Layout>
   )
 }

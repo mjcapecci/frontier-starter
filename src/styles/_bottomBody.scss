@@ -1,0 +1,8 @@
+.about-us-grid {
+  @include grid-2;
+}
+
+.about-us-card {
+  border: none;
+  @include f-center;
+}

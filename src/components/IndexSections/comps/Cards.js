@@ -9,15 +9,15 @@ const Cards = () => {
       <h2>The Winning Formula</h2>
       <div className="card-grid container">
         <div className="card" {...slideUp1}>
-          <h4>Design</h4>
+          <h4>1. Design</h4>
           <FontAwesomeIcon icon={faRulerCombined} size="4x"/>
         </div>
         <div className="card" {...slideUp2}>
-          <h4>Estimate</h4>
+          <h4>2. Estimate</h4>
           <FontAwesomeIcon icon={faFileInvoiceDollar} size="4x"/>
         </div>
         <div className="card" {...slideUp3}>
-          <h4>Build</h4>
+          <h4>3. Build</h4>
           <FontAwesomeIcon icon={faHammer} size="4x"/>
         </div>
       </div>
