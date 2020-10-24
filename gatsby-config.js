@@ -18,6 +18,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-background-image`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-scroll-reveal`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

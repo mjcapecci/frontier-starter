@@ -2,9 +2,25 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 import BackgroundImage from "gatsby-background-image"
-import Logo from "../../images/logo.png"
+import Logo from "../ImagesPreload/logo"
+import useWindowSize from "../../utils/useWindowSize"
 
 const HeroMain = () => {
+  const width = useWindowSize().width
+
+  const breakPoint = () => {
+    switch (true) {
+      case width >= 1920:
+        return "400px"
+      case width >= 1050:
+        return "400px"
+      case width >= 650:
+        return "400px"
+      default:
+        return "350px"
+    }
+  }
+
   const bgImageQuery = useStaticQuery(graphql`
     query bgImage {
       file(relativePath: { eq: "bg.jpg" }) {
@@ -28,12 +44,7 @@ const HeroMain = () => {
     >
       <div className="jumbotron jumbotron-fluid">
         <div className="hero-container">
-          <img src={Logo} alt="" />
-          <h1 className="display-4">Fluid jumbotron</h1>
-          <p className="lead">
-            This is a modified jumbotron that occupies the entire horizontal
-            space of its parent.
-          </p>
+          <Logo width={breakPoint()} />
         </div>
       </div>
     </StyledBackgroundImage>

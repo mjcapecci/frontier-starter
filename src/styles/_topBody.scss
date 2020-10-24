@@ -1,0 +1,75 @@
+.under-hero {
+  height: auto;
+  padding: 8rem 0 5rem 0;
+  @include grid-2;
+
+  .under-hero-text {
+    @include f-center;
+  }
+}
+
+.card-grid-container {
+  position: relative;
+  width: 100%;
+  background: rgb(235, 233, 233);
+  margin: 5rem 0;
+
+  h2 {
+    padding: 2rem 0;
+    text-align: center;
+    color: #342319;
+  }
+
+  .card-grid {
+    padding: 1rem 0 3rem 0;
+    @include grid-3;
+    justify-items: center;
+  }
+
+  .card {
+    border-radius: 0px;
+    height: 15rem;
+    width: 15rem;
+    background: #342319;
+    color: white;
+    border-radius: 50%;
+    @include f-center;
+
+    h4 {
+      margin-bottom: 1.5rem;
+      font-size: 28px;
+    }
+  }
+}
+
+// Pseudo Selectors for Slant
+.card-grid-container::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background: rgb(235, 233, 233);
+  transform: skewY(2deg);
+  z-index: -1;
+}
+
+.card-grid-container::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background: rgb(235, 233, 233);
+  transform: skewY(2deg);
+  z-index: -1;
+}
+
+.card:nth-child(1) {
+  transform: translateY(-25px);
+}
+.card:nth-child(3) {
+  transform: translateY(25px);
+}
