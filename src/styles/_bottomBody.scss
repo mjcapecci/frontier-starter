@@ -6,3 +6,18 @@
   border: none;
   @include f-center;
 }
+
+.how-to {
+  background: rgba(0, 0, 0, 0.2);
+  margin-top: 8rem;
+  @include f-center;
+  color: white;
+
+  h2 {
+    padding: 2rem;
+  }
+
+  p {
+    padding-bottom: 2rem;
+  }
+}

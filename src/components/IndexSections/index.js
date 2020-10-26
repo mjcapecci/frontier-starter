@@ -1,3 +1,5 @@
+export { default as Mission } from "./comps/Mission"
 export { default as UnderHero } from "./comps/UnderHero"
 export { default as Cards } from "./comps/Cards"
 export { default as About } from "./comps/About"
+export { default as HowTo } from "./comps/HowTo"

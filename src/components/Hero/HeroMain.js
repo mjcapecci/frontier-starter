@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import styled from "styled-components"
-import BackgroundImage from "gatsby-background-image"
+import {Bg} from '../../utils/backgroundImage'
 import Logo from "../ImagesPreload/logo"
 import useWindowSize from "../../utils/useWindowSize"
 
@@ -35,7 +34,7 @@ const HeroMain = () => {
   const bgImage = bgImageQuery.file.childImageSharp.fluid
 
   return (
-    <StyledBackgroundImage
+    <Bg
       Tag="section"
       className="hero"
       fluid={bgImage}
@@ -47,19 +46,8 @@ const HeroMain = () => {
           <Logo width={breakPoint()} />
         </div>
       </div>
-    </StyledBackgroundImage>
+    </Bg>
   )
 }
-
-const StyledBackgroundImage = styled(BackgroundImage)`
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: fixed;
-  &::before,
-  &::after {
-    filter: brightness(0.62);
-  }
-`
 
 export default HeroMain
