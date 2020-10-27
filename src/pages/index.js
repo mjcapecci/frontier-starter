@@ -1,8 +1,14 @@
 import React from "react"
 import Layout from "../components/Default/Layout"
 import Hero from "../components/Hero/HeroMain"
-import { Mission, UnderHero, Cards, About, HowTo } from "../components/IndexSections/index"
-import {MainForm} from '../components/Contact/index'
+import {
+  Mission,
+  UnderHero,
+  Cards,
+  About,
+  HowTo,
+} from "../components/IndexSections/index"
+import { FormSection } from "../components/Contact/index"
 
 const IndexPage = () => {
   return (
@@ -13,7 +19,7 @@ const IndexPage = () => {
       <Cards />
       <About />
       <HowTo />
-      <MainForm />
+      <FormSection />
     </Layout>
   )
 }

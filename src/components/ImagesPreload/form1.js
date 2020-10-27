@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 const Image = ({ width }) => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "2.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "4.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 640, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp

@@ -1,1 +1,5 @@
-
+footer {
+  height: 15vh;
+  background: rgb(235, 233, 233);
+  @include f-center;
+}
