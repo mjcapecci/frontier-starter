@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import {Bg} from '../../utils/backgroundImage'
+import { Bg } from "../../utils/backgroundImage"
 import Logo from "../ImagesPreload/logo"
 import useWindowSize from "../../utils/useWindowSize"
 

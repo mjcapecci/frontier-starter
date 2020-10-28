@@ -1,5 +1,5 @@
 import BackgroundImage from "gatsby-background-image"
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export const Bg = styled(BackgroundImage)`
   width: 100%;

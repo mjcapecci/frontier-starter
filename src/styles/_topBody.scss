@@ -1,13 +1,20 @@
-.mission {
-  margin-top: 4rem;
-  margin-bottom: -4rem;
-  text-align: center;
-  font-size: 18px;
+.mission-container {
+  transform: translateY(60px);
+  .mission {
+    margin-bottom: -4rem;
+    text-align: center;
+    font-size: 18px;
+    z-index: 2;
+
+    strong {
+      padding: 0.5rem;
+    }
+  }
 }
 
 .under-hero {
   height: auto;
-  padding: 8rem 0 5rem 0;
+  padding: 7rem 0 0rem 0;
   @include grid-2;
 
   .under-hero-text {
@@ -18,8 +25,8 @@
 .card-grid-container {
   position: relative;
   width: 100%;
-  background: rgb(235, 233, 233);
-  margin: 5rem 0;
+  background: linear-gradient(rgba(255, 197, 197, 0.3), rgba(7, 5, 5, 0.3)),
+    url("../images/light-veneer.png");
 
   h2 {
     padding: 2rem 0;

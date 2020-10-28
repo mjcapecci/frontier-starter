@@ -5,6 +5,17 @@
   justify-content: center;
 }
 
+@mixin f-center-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  & > * {
+    // padding: 0 5rem;
+  }
+}
+
 @mixin grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

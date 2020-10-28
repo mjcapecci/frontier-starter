@@ -4,6 +4,7 @@
 @import "./bottomBody";
 @import "./forms";
 @import "./footer";
+@import "./responsive";
 @import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 .test {
@@ -13,4 +14,14 @@
 
 body {
   background: #fffffe;
+}
+
+.pattern {
+  background-image: linear-gradient(
+      rgba(255, 248, 231, 0.7),
+      rgba(255, 248, 231, 0.7)
+    ),
+    url("../images/dot-grid.png");
+  background-position: fixed;
+  padding: 5rem 0;
 }

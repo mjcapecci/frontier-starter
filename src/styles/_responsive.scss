@@ -1,0 +1,14 @@
+// Mobile Section Padding
+@media screen and (max-width: 500px) {
+  .mp-1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+// Hidden in Mobile
+@media screen and (max-width: 500px) {
+  .m-hidden {
+    display: none;
+  }
+}

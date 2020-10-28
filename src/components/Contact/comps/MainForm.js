@@ -47,6 +47,27 @@ const MainForm = () => {
           )}
         </div>
         <div class="form-group">
+          <label for="service">Service Type:</label>
+          <select
+            name="service"
+            class="form-control"
+            ref={register({
+              required: true,
+            })}
+          >
+            <option value="" hidden>
+              Click to Select
+            </option>
+            <option value="Estimate">Estimate</option>
+            <option value="Design">Design</option>
+            <option value="Repair">Repair</option>
+            <option value="Build">Build</option>
+          </select>
+          {errors.service && (
+            <p className="error">This field must include a selected service.</p>
+          )}
+        </div>
+        <div class="form-group">
           <label for="message">Message:</label>
           <textarea
             name="message"

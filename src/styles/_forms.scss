@@ -1,12 +1,12 @@
 .form-section {
-  @include f-center;
-  justify-content: space-between;
-  flex-direction: row;
+  @include f-center-row;
   padding: 5rem 0;
 }
 
 .form-img-container {
-  padding: 0 0 0 20rem;
+  height: 100%;
+  width: 100%;
+  @include f-center;
 }
 
 .form-container {
@@ -30,9 +30,10 @@
   }
 
   .main-form {
-    padding: 0 20rem 0 10rem;
-    width: 100%;
-    input {
+    width: 80%;
+    input,
+    select,
+    textarea {
       border-radius: 0px;
     }
 
