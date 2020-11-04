@@ -7,8 +7,6 @@ function Blog({ pageContext }) {
 
   const {posts} = pageContext
 
-  console.log(posts)
-
   return (
     <Layout>
       {posts.map(post => (

@@ -1,0 +1,25 @@
+nav {
+  position: absolute !important;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+  .navbar-collapse {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    transition: all 0.2s ease;
+    margin: 0 4rem;
+    color: white;
+    letter-spacing: 2px;
+    &:hover {
+      color: rgb(204, 204, 204);
+    }
+  }
+}

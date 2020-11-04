@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import {MainNav} from '../Navbar/index'
 
 import "../../styles/index.scss"
 
@@ -19,6 +20,7 @@ const Layout = ({ page, children }) => {
   return (
     <>
       <SEO title={page} />
+      <MainNav />
       <main>{children}</main>
       <footer>
         © {new Date().getFullYear()}, Built by

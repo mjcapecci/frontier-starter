@@ -10,11 +10,11 @@ const HeroMain = () => {
   const breakPoint = () => {
     switch (true) {
       case width >= 1920:
-        return "400px"
+        return "370px"
       case width >= 1050:
-        return "400px"
+        return "325px"
       case width >= 650:
-        return "400px"
+        return "325px"
       default:
         return "350px"
     }
