@@ -1,25 +1,33 @@
-import React from "react"
-import { Link } from 'gatsby'
+import React, { useState, useEffect } from "react"
+import { Link } from "gatsby"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
-const MainNav = () => {
+const MainNav = ({ page, setPage }) => {
+  useEffect(() => {
+    if (window) {
+      setPage(window.location.pathname)
+    }
+  }, [])
+
+  const getLinkClassName = link => {
+    if (page === link) return "nav-item active-nav-item"
+    if (link != "/" && window.location.pathname.includes(link))
+      return "nav-item active-nav-item"
+    if (page != link) return "nav-item"
+  }
+
   return (
     <nav class="navbar navbar-expand-lg">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">
-              Home <span class="sr-only">(current)</span>
-            </a>
+          <li class={getLinkClassName("/")}>
+            <Link to="/">Home</Link>
+          </li>
+          <li class={getLinkClassName("/posts")}>
+            <Link to="/posts">Blog</Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              Blog
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              Contact
-            </a>
+            <a onClick={() => scrollTo("#main-contact-form")}>Contact</a>
           </li>
         </ul>
       </div>

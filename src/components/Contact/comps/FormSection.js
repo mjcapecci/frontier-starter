@@ -4,8 +4,8 @@ import FormImg from "../../ImagesPreload/form1"
 
 const FormSection = () => {
   return (
-    <section className="form-section pattern">
-      <div className="form-img-container m-hidden">
+    <section className="form-section pattern" id="main-contact-form">
+      <div className="form-img-container ml-hidden">
         <FormImg width={640} />
       </div>
       <MainForm />

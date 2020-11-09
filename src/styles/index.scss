@@ -4,8 +4,8 @@
 @import "./topBody";
 @import "./bottomBody";
 @import "./forms";
+@import "./posts";
 @import "./footer";
-@import "./responsive";
 @import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 .test {
@@ -26,3 +26,5 @@ body {
   background-position: fixed;
   padding: 5rem 0;
 }
+
+@import "./responsive";

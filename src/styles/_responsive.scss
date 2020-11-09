@@ -12,3 +12,16 @@
     display: none;
   }
 }
+// Hidden in large mobile
+@media screen and (max-width: 800px) {
+  .ml-hidden {
+    display: none;
+  }
+}
+
+// Hidden in x-large mobile
+@media screen and (max-width: 1000px) {
+  .mxl-hidden {
+    display: none;
+  }
+}

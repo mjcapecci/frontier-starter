@@ -1,0 +1,22 @@
+.blog-container {
+  min-height: 50vh;
+}
+
+.blog-index {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 1rem;
+  grid-gap: 1rem;
+
+  @media screen and (max-width: 970px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 650px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.post-card {
+  border-radius: 0px;
+  background: rgba(206, 206, 206, 0.842);
+}

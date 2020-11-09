@@ -15,6 +15,8 @@ const HeroMain = () => {
         return "325px"
       case width >= 650:
         return "325px"
+      case width >= 320:
+        return "275px"
       default:
         return "350px"
     }

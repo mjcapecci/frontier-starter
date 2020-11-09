@@ -10,17 +10,15 @@ const UnderHero = () => {
     switch (true) {
       case width >= 1920:
         return "640px"
-      case width >= 1050:
-        return "400px"
-      case width >= 650:
-        return "400px"
+      case width >= 1000:
+        return "100%"
       default:
-        return "auto"
+        return "100%"
     }
   }
 
   return (
-    <section className="pattern">
+    <section className="pattern m-end-on-image">
       <div className="container under-hero  mp-1">
         <div className="under-hero-text" {...slideUp3}>
           <h2>Build the deck you've always wanted.</h2>

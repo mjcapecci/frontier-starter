@@ -19,11 +19,11 @@ const About = () => {
               dolorum commodi voluptates!
             </p>
           </div>
-          <div className="card about-us-card m-hidden" {...flipRight2}>
-            <About1 width={450} />
+          <div className="card about-us-card mxl-hidden" {...flipRight2}>
+            <About1 width={"100%"} />
           </div>
           <div className="card about-us-card" {...flipLeft1}>
-            <About2 width={450} />
+            <About2 width={"100%"} />
           </div>
           <div className="card about-us-card">
             <p>

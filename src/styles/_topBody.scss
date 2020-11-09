@@ -1,10 +1,19 @@
 .mission-container {
   transform: translateY(60px);
+
   .mission {
     margin-bottom: -4rem;
     text-align: center;
     font-size: 18px;
     z-index: 2;
+
+    @media screen and (max-width: 489px) {
+      margin-bottom: -5rem;
+    }
+
+    @media screen and (max-width: 320px) {
+      margin-bottom: -7rem;
+    }
 
     strong {
       padding: 0.5rem;
@@ -19,6 +28,10 @@
 
   .under-hero-text {
     @include f-center;
+  }
+
+  @media screen and (max-width: 320px) {
+    margin-top: 3rem;
   }
 }
 

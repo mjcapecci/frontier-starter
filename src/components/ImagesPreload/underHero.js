@@ -7,7 +7,7 @@ const Image = ({ width }) => {
     query {
       placeholderImage: file(relativePath: { eq: "5.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 640, quality: 100) {
+          fluid(maxWidth: 1000, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
             ...GatsbyImageSharpFluidLimitPresentationSize
           }
