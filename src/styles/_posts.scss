@@ -5,18 +5,50 @@
 .blog-index {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 0 1rem;
-  grid-gap: 1rem;
+  margin: 0 3rem;
+  grid-gap: 3rem;
 
   @media screen and (max-width: 970px) {
     grid-template-columns: repeat(2, 1fr);
+    margin: 0 2rem;
   }
   @media screen and (max-width: 650px) {
     grid-template-columns: repeat(1, 1fr);
+    margin: 0 2rem;
   }
 }
 
 .post-card {
   border-radius: 0px;
   background: rgba(206, 206, 206, 0.842);
+
+  .card-body {
+    .card-title {
+      margin: 1rem 0;
+    }
+
+    .btn {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.article-section {
+  @include f-center;
+}
+
+article {
+  h1,
+  h2 {
+    margin: 0 1rem 3rem 1rem;
+    text-align: center;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 2rem;
+  }
 }

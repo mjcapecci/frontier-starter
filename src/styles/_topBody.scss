@@ -7,12 +7,16 @@
     font-size: 18px;
     z-index: 2;
 
-    @media screen and (max-width: 489px) {
+    @media screen and (max-width: 504px) {
       margin-bottom: -5rem;
+
+      @media screen and (max-height: 990px) {
+        margin-bottom: -7rem;
+      }
     }
 
-    @media screen and (max-width: 320px) {
-      margin-bottom: -7rem;
+    @media screen and (max-width: 450px) {
+      margin: 0 1rem -7rem 1rem;
     }
 
     strong {
@@ -28,6 +32,12 @@
 
   .under-hero-text {
     @include f-center;
+  }
+
+  @media screen and (max-width: 504px) {
+    @media screen and (max-height: 990px) {
+      margin-top: 3rem;
+    }
   }
 
   @media screen and (max-width: 320px) {

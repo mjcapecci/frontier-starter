@@ -18,6 +18,11 @@
   }
 
   p {
+    margin: 0 2rem;
     padding-bottom: 2rem;
+
+    @media screen and (max-width: 500px) {
+      margin: 0 0rem;
+    }
   }
 }
