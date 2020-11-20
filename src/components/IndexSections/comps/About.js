@@ -7,16 +7,14 @@ const About = () => {
   return (
     <section className="pattern">
       <div className="container">
-        <h2>Who Are We?</h2>
+        <h2>About Our Partners</h2>
         <div className="about-us-grid">
           <div className="card about-us-card">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ad
-              doloremque aut molestiae at. Possimus voluptatibus earum quod et
-              culpa, eum eveniet, nesciunt corrupti est sed minima perferendis?
-              Dolore quas beatae aperiam ipsa voluptates sint commodi repellat,
-              modi neque id ducimus! Dolores nisi maxime quas accusamus nobis
-              dolorum commodi voluptates!
+              We are partnered with the leading decking contractors and
+              suppliers in Northwest Indiana. No matter your price or budget, we
+              can get you into a conversation with companies who will help you
+              get the job done at the right price.
             </p>
           </div>
           <div className="card about-us-card mxl-hidden" {...flipRight2}>
@@ -27,12 +25,10 @@ const About = () => {
           </div>
           <div className="card about-us-card">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ad
-              doloremque aut molestiae at. Possimus voluptatibus earum quod et
-              culpa, eum eveniet, nesciunt corrupti est sed minima perferendis?
-              Dolore quas beatae aperiam ipsa voluptates sint commodi repellat,
-              modi neque id ducimus! Dolores nisi maxime quas accusamus nobis
-              dolorum commodi voluptates!
+              Every step of the process is important. A smart design leads to a
+              reasonable estimate and a quality deck. The professionals we
+              partner with are vetted and have long histories of providing the
+              results people are looking for.
             </p>
           </div>
         </div>

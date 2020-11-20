@@ -10,6 +10,9 @@ function Blog({ pageContext }) {
   return (
     <Layout page={"Blog"}>
       <section className="blog-container pattern">
+        <div className="blog-title">
+          <h2>BLOG</h2>
+        </div>
         <div className="blog-index">
           {posts.map(post => (
             <PostCard post={post} />

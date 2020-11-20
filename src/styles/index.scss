@@ -8,6 +8,7 @@
 @import "./footer";
 @import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 .test {
   max-width: 25rem;
@@ -18,16 +19,30 @@ body {
   background: #fffffe;
   line-height: 2rem;
   font-family: "Roboto", sans-serif;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
 }
 
 .pattern {
   background-image: linear-gradient(
       rgba(255, 248, 231, 0.7),
-      rgba(145, 139, 125, 0.4)
+      rgba(255, 248, 231, 0.7)
     ),
     url("../images/dot-grid.png");
   background-position: fixed;
-  padding: 5rem 0;
+  padding: 7rem 0;
 }
 
 @import "./responsive";

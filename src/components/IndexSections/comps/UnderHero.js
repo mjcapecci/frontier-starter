@@ -1,6 +1,5 @@
 import React from "react"
 import UnderHeroImg from "../../ImagesPreload/underHero"
-import { slideUp3 } from "../../../utils/animations"
 import useWindowSize from "../../../utils/useWindowSize"
 
 const UnderHero = () => {
@@ -20,18 +19,23 @@ const UnderHero = () => {
   return (
     <section className="pattern m-end-on-image">
       <div className="container under-hero  mp-1">
-        <div className="under-hero-text" {...slideUp3}>
-          <h2>Build the deck you've always wanted.</h2>
+        <div className="under-hero-text">
+          <h2>Find the right contractor.</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
-            esse harum nam, reiciendis assumenda ducimus est dolor deserunt
-            facilis, in maiores molestiae provident repudiandae. Laborum, nobis.
-            Repellat iusto optio repellendus provident amet esse porro maiores
-            ducimus libero sunt temporibus vel molestiae aliquam, nihil magni
-            vero eum corporis! Consequuntur, voluptates. Saepe, eos. Est harum
-            veniam maxime sed nobis expedita. Nostrum dignissimos blanditiis
-            sint a perferendis voluptates, recusandae consequuntur laudantium
-            voluptas porro officia provident quos eos obcaecati.
+            Once you’ve made the decision to build or repair your deck, the next
+            steps are always as follows: make a design, get an estimate, and
+            hire a contractor.
+          </p>
+          <p>
+            The problem? There is a lot of misinformation out there, and it’s
+            difficult to pick the best contractors for your particular job.
+            Ultimately, it's easy to spend too much money.
+          </p>
+          <p>
+            That’s where we step in. All you have to do is provide us some
+            detail about the job you need done, and we’ll make sure the most
+            qualified decking contractor in Northwest Indiana is notified right
+            away.
           </p>
         </div>
         <div className="under-hero-img">

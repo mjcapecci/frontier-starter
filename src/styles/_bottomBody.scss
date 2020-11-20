@@ -6,12 +6,23 @@
   border: none;
   background: none;
   @include f-center;
+
+  p {
+    margin: 0 2rem;
+  }
+
+  @media screen and (max-width: 1000px) {
+    p {
+      margin: 2rem 0rem;
+    }
+  }
 }
 
 .how-to {
   background: rgba(0, 0, 0, 0.2);
   @include f-center;
   color: white;
+  padding: 3rem 0;
 
   h2 {
     padding: 2rem;

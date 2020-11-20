@@ -24,11 +24,11 @@ const HowTo = () => {
       backgroundColor={`#111111`}
     >
       <div className="how-to mp-1" {...slideRight1}>
-        <h2>How This Works</h2>
+        <h2>Get In Touch Today!</h2>
         <p>
           Leave us a detailed message via the contact form below, and we will
           forward your request to the company / contractor best fit to handle
-          your request. That's it!
+          your request.
         </p>
       </div>
     </Bg>

@@ -60,7 +60,7 @@ const MainForm = () => {
             </option>
             <option value="Estimate">Estimate</option>
             <option value="Design">Design</option>
-            <option value="Repair">Repair</option>
+            <option value="Repair">Repair / Wash</option>
             <option value="Build">Build</option>
           </select>
           {errors.service && (
