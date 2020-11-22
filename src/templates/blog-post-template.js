@@ -13,7 +13,7 @@ function BlogPostLayout({ pageContext }) {
         <title>{title}</title>
       </Helmet>
       <section className="pattern article-section">
-        <article>
+        <article className="container">
           <header>
             <h1>{title}</h1>
           </header>

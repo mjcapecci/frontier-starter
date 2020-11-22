@@ -27,7 +27,7 @@ const MainNav = ({ page, setPage }) => {
             <Link to="/posts">Blog</Link>
           </li>
           <li class="nav-item">
-            <a onClick={() => scrollTo("#main-contact-form")}>Contact</a>
+            <a onClick={() => scrollTo("#how-to")}>Contact</a>
           </li>
         </ul>
       </div>

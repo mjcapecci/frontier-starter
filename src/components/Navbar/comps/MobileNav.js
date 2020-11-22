@@ -49,7 +49,7 @@ const MobileNav = ({ page, setPage }) => {
               <a
                 onClick={() => {
                   closeNav()
-                  scrollTo("#main-contact-form")
+                  scrollTo("#how-to")
                 }}
               >
                 Contact

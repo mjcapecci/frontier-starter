@@ -23,7 +23,7 @@ const HowTo = () => {
       preserveStackingContext={false}
       backgroundColor={`#111111`}
     >
-      <div className="how-to mp-1" {...slideRight1}>
+      <div className="how-to mp-1" id="how-to" {...slideRight1}>
         <h2>Get In Touch Today!</h2>
         <p>
           Leave us a detailed message via the contact form below, and we will
