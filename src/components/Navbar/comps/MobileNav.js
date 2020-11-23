@@ -6,7 +6,11 @@ import MobileHamburger from "./MobileHamburger"
 const MobileNav = ({ page, setPage }) => {
   const getLinkClassName = link => {
     if (page === link) return "nav-item active-nav-item"
-    if (link != "/" && window.location.pathname.includes(link))
+    if (
+      link != "/" &&
+      typeof window !== "undefined" &&
+      window.location.pathname.includes(link)
+    )
       return "nav-item active-nav-item"
     if (page != link) return "nav-item"
   }

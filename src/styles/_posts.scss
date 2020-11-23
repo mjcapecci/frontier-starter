@@ -10,9 +10,6 @@
 
 .blog-index {
   display: grid;
-  grid-auto-flow: column;
-  justify-content: stretch;
-  align-content: center;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 3rem;
   grid-gap: 3rem;
