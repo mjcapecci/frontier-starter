@@ -3,9 +3,19 @@ module.exports = {
     title: `Northwest Indiana Decking Authority`,
     description: `Build your dream deck with Northwest Indiana Decking Authority - Connecting the people of The Region with the best decking contractors for the job at hand.`,
     author: `Frontier Web Development`,
+    siteUrl: `https://www.nwidecking.com`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "G-2FJGQXWW5Q",
+        head: true,
+      },
+    },
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-remove-trailing-slashes`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -24,19 +34,19 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-          extensions: [`.mdx`, `.md`],
-          defaultLayout: require.resolve('./src/templates/blog-post-template.js'),
-          gatsbyRemarkPlugins: [
-            {
-              resolve: `gatsby-remark-images`,
-              options: {
-                maxWidth: 1035,
-                sizeByPixelDensity: true
-              }
-            }
-          ]
+        extensions: [`.mdx`, `.md`],
+        defaultLayout: require.resolve("./src/templates/blog-post-template.js"),
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1035,
+              sizeByPixelDensity: true,
+            },
+          },
+        ],
       },
-  },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
