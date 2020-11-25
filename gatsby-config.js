@@ -12,6 +12,14 @@ module.exports = {
         trackingIds: ["G-6DWB4C8ECK"],
       },
     },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://www.nwidecking.com",
+        sitemap: "https://www.nwidecking.com/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-remove-trailing-slashes`,
