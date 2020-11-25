@@ -7,11 +7,9 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-google-tagmanager",
+      resolve: "gatsby-plugin-google-gtag",
       options: {
-        id: "G-6DWB4C8ECK",
-        includeInDevelopment: true,
-        defaultDataLayer: { platform: "gatsby" },
+        trackingIds: ["G-6DWB4C8ECK"],
       },
     },
     `gatsby-plugin-react-helmet`,
