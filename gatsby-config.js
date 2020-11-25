@@ -7,10 +7,11 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        trackingId: "G-2FJGQXWW5Q",
-        head: true,
+        id: "G-6DWB4C8ECK",
+        includeInDevelopment: true,
+        defaultDataLayer: { platform: "gatsby" },
       },
     },
     `gatsby-plugin-react-helmet`,
