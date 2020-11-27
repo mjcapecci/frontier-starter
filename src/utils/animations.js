@@ -13,6 +13,11 @@ export const slideUp3 = {
   "data-sal-delay": "400",
 }
 
+export const slideUp4 = {
+  "data-sal": "slide-up",
+  "data-sal-delay": "600",
+}
+
 export const slideRight1 = {
   "data-sal": "slide-right",
   "data-sal-delay": "100",
