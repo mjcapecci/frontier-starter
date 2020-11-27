@@ -11,6 +11,9 @@ module.exports = {
       options: {
         trackingIds: ["G-6DWB4C8ECK"],
       },
+      pluginConfig: {
+        head: true,
+      },
     },
     {
       resolve: "gatsby-plugin-robots-txt",
